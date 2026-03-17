@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        
+    <bean  id="sbu1" class="cg.demo.springExercise3.SBU3" autowire="byType" >
+    <property name="sbuCode" value="101"></property>
+    <property name="sbuName" value="Product Engineering Services " ></property>
+    <property name="sbuHead" value="Kiren Rao"></property>
+    <property name="empList">
+    <list>
+    <ref bean="emp1"/>
+    <ref bean="emp2"/>
+    <ref bean="emp3"/>
+    </list>
+    </property>
+    
+    </bean>
+    
+       
+    <bean  id="emp1" class="cg.demo.springExercise3.Employee3" >
+    <property name="employeeId" value="1"></property>
+    <property name="employeeName" value="Sudha" ></property>
+    <property name="salary" value="55000"></property>
+    </bean>
+    
+    <bean  id="emp2" class="cg.demo.springExercise3.Employee3" >
+    <property name="employeeId" value="2"></property>
+    <property name="employeeName" value="Ravi" ></property>
+    <property name="salary" value="54000"></property>
+    </bean>
+    
+    <bean  id="emp3" class="cg.demo.springExercise3.Employee3" >
+    <property name="employeeId" value="3"></property>
+    <property name="employeeName" value="Kishan" ></property>
+    <property name="salary" value="19000"></property>
+    </bean>
+    
+   
+    
+
+
+   
+
+</beans>
+
