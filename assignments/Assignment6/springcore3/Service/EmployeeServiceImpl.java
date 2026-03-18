@@ -2,10 +2,14 @@ package cg.demo.springcore3.Service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import cg.demo.springcore3.Entities.Employee;
 import cg.demo.springcore3.Repository.EmployeeRepo;
-
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
+	@Autowired
     EmployeeRepo er;
     
 	@Override

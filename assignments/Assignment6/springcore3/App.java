@@ -89,7 +89,7 @@ public class App {
                     System.out.println("Employee with ID " + id1 + " does not exist!");
                 }
 
-                System.out.println("Salary successfully!");
+                System.out.println("Salary Updated successfully!");
                 break;
 
             case 5:
@@ -98,9 +98,9 @@ public class App {
                 int deleteId = sc.nextInt();
 
                boolean b2 =  es.deleteEmployee(deleteId);
-                if (b2) {
+                if (!b2) {
                     System.out.println("Employee with ID " + deleteId + " does not exist!");
-                    return;
+                   
                 }
 
                 System.out.println("Employee deleted successfully!");
